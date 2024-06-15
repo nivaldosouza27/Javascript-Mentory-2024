@@ -1,0 +1,1 @@
+console.log("Hello World!") //isso é um console que mostra no terminal o que foi pedido dentro da função
