@@ -15,4 +15,12 @@
     || -> OR -> OU = Somente uma comparação precisa ser verdadeira
     ! -> NOT -> NÃO = Negação de uma sentença
 
+    FALSY
+    false
+    0
+    '' "" ``
+    null
+    undefined
+    NaN
+ 
 */

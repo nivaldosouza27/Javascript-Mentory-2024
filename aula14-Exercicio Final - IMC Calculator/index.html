@@ -8,37 +8,66 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main">
+    <section class="main">
         <form class="form">
+
             <legend>Tabela IMC</legend>
+
+            <div class="first-text">
+                <div class="intern">
+                    <h1>IMC</h1>
+                    <p>Menos do que 18.5</p>
+                    <p>Entre 18.5 e 24.9</p>
+                    <p>Entre 25 e 29.9</p>
+                    <p>Entre 30 e 39</p>
+                    <p>Mais do que 40</p>
+                </div>
+                <div class="intern">
+                    <h1>Resultado</h1>
+                    <p>Magreza</p>
+                    <p>Normal<p>
+                    <p>Sobrepeso</p>
+                    <p>Obesidade</p>
+                    <p>Obesidade Grave</p>
+                </div>
+            </div>
+            
+            <h2>Calcule seu IMC</h2>
+
             <div>
                 <label for="name">Nome</label>
                 <input type="text" class="nome" name="name" placeholder="Digite seu nome:">
             </div>
+
             <div>
                 <label for="lastname">Sobrenome</label>
                 <input type="text" class="sobrenome" name="lastname" placeholder="Digite seu sobrenome:">
             </div>
+
             <div>
                 <label for="peso">Peso</label>
                 <input type="number" class="peso" name="peso" placeholder="Digite seu peso:">
             </div>
+
             <div>
                 <label for="altura">Altura</label>
                 <input type="float" class="altura" name="altura" placeholder="Digite sua altura em metros:">
             </div>
+
             <div class="send-button">
                 <button type="submit" class="button">Enviar</button>
             </div>
         </form>
+
         <div class="resultado">
-            <p>O seu nome é:<b class="b1"></b> </p>
-            <p>O seu peso é:<b class="b2"></b> </p>
-            <p>A sua altura é:<b class="b3"></b> </p>
-            <p>O seu IMC é:<b class="b4"></b> </p>
+            <p>O seu nome é:<b class="b1"></b></p>
+            <p>O seu peso é:<b class="b2"></b>Kg</p>
+            <p>A sua altura é:<b class="b3"></b>m</p>
+            <p>O seu IMC é:<b class="b4"></b></p>
             <p>Sua classificação de IMC é: <b class="b5"></b> </p>
         </div>
-    </div>
+
+    </section>
 
     <script src="index.js"></script>
 </body>

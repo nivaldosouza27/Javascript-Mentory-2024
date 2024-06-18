@@ -10,6 +10,12 @@ function escopo() {
         const peso = form.querySelector('.peso');
         const altura = form.querySelector('.altura');
         
+        // function validaDados(peso, altura) {
+        //     if (typeof peso == 'Float') {
+        //     }else{
+        //         return alert('Peso Invalido')
+        //     }
+        // }
         
         function calculaIMC(peso, altura) {
             return peso / (altura * altura)
@@ -34,21 +40,20 @@ function escopo() {
             sobrenome: sobrenome.value,
             peso: peso.value,
             altura: altura.value,
-            imc: calculaIMC(peso.value, altura.value),
-            classificacao: ''
+            imc: calculaIMC(peso.value, altura.value)
         };
 
-        pessoa_objeto.classificacao = classificaIMC (pessoa_objeto.imc)
+        pessoa_objeto.classificacao = classificaIMC (pessoa_objeto.imc);
         
         resultado.querySelector('.b1').innerHTML = pessoa_objeto.nome + ' ' + pessoa_objeto.sobrenome ;
         resultado.querySelector('.b2').innerHTML = pessoa_objeto.peso;
         resultado.querySelector('.b3').innerHTML = pessoa_objeto.altura;
         resultado.querySelector('.b4').innerHTML = pessoa_objeto.imc.toFixed(2);
-        resultado.querySelector('.b5').innerHTML = pessoa_objeto.classificacao
+        resultado.querySelector('.b5').innerHTML = pessoa_objeto.classificacao;
     
         return console.log(pessoa_objeto);
     }
-
+    
     form.addEventListener('submit', recebeEvento);
 }
 
