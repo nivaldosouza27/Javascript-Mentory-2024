@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Final</title>
+    <link rel="icon" href="../aula13-Exercicio Final - IMC Calculator/src/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <form class="form">
+            <legend>Tabela IMC</legend>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" class="nome" name="name" placeholder="Digite seu nome:">
+            </div>
+            <div>
+                <label for="lastname">Sobrenome</label>
+                <input type="text" class="sobrenome" name="lastname" placeholder="Digite seu sobrenome:">
+            </div>
+            <div>
+                <label for="peso">Peso</label>
+                <input type="number" class="peso" name="peso" placeholder="Digite seu peso:">
+            </div>
+            <div>
+                <label for="altura">Altura</label>
+                <input type="float" class="altura" name="altura" placeholder="Digite sua altura em metros:">
+            </div>
+            <div class="send-button">
+                <button type="submit" class="button">Enviar</button>
+            </div>
+        </form>
+        <div class="resultado">
+            <p>O seu nome é:<b class="b1"></b> </p>
+            <p>O seu peso é:<b class="b2"></b> </p>
+            <p>A sua altura é:<b class="b3"></b> </p>
+            <p>O seu IMC é:<b class="b4"></b> </p>
+            <p>Sua classificação de IMC é: <b class="b5"></b> </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
